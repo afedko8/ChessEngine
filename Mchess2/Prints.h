@@ -1,6 +1,6 @@
 #pragma once
-#include"Macros_and_lib.ipp"
-#include"Constans.h"
+#include"MacrosAndLib.ipp"
+#include"Constants.h"
 
 
 void prnt_brd(BRD_U64 BRD)
@@ -30,7 +30,7 @@ void prnt_brd2(BRD_U64 BRD, int squareC, char c) {
             int square = rank * 8 + file;
             if (file == 0) printf("%d ", 8 - rank);
             if (square == squareC) printf(" %c", c);
-            else printf(" %c", (gt_bt(BRD, square) ? '1' : ' '));
+            else printf(" %c", (gt_bt(BRD, square) ? '1' : '.'));
         }
         std::cout << '\n';
     }

@@ -1,21 +1,18 @@
 #pragma once
-#include"Constans.h"
+#include"Constants.h"
 
 namespace attacks {
+
     BRD_U64 P_msk_att(int side, int square)
     {
         BRD_U64 attacks = 0ULL;
-
         BRD_U64 BRD = 0ULL;
-
         st_bt1(BRD, square);
-
         if (!side)
         {
             if ((BRD >> 7) & not_a_file) attacks |= (BRD >> 7);
             if ((BRD >> 9) & not_h_file) attacks |= (BRD >> 9);
         }
-
         else
         {
             if ((BRD << 7) & not_h_file) attacks |= (BRD << 7);
@@ -28,11 +25,8 @@ namespace attacks {
     BRD_U64 N_msk_att(int square)
     {
         BRD_U64 attacks = 0ULL;
-
         BRD_U64 BRD = 0ULL;
-
         st_bt1(BRD, square);
-
         if ((BRD >> 17) & not_h_file) attacks |= (BRD >> 17);
         if ((BRD >> 15) & not_a_file) attacks |= (BRD >> 15);
         if ((BRD >> 10) & not_hg_file) attacks |= (BRD >> 10);
@@ -42,7 +36,6 @@ namespace attacks {
         if ((BRD << 15) & not_h_file) attacks |= (BRD << 15);
         if ((BRD << 10) & not_ab_file) attacks |= (BRD << 10);
         if ((BRD << 6) & not_hg_file) attacks |= (BRD << 6);
-
         return attacks;
     }
 

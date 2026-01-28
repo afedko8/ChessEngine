@@ -16,4 +16,6 @@
 #define Perf_driver3 "r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1"
 #define Perf_driver4 "rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8  "
 #define Perf_driver5 "r4rk1/1pp1qppp/p1np1n2/2b1p1B1/2B1P1b1/P1NP1N2/1PP1QPPP/R4RK1 w - - 0 10 "
+#define Perf_driver6 "r2q1rk1/pP1p2pp/Q4n2/bbp1p3/Np6/1B3NBn/pPPP1PPP/R3K2R b KQ - 0 1 "
 #define Lichess_task "8/8/8/6P1/4k3/7p/5K1b/8 b - - 0 1"
+#define Lichess_bot1 "r2k1b1r/2p1pppp/1p3n2/p5B1/3P3P/1PN3P1/P1P1NP2/R3K1R1 w KQkq - 0 1"

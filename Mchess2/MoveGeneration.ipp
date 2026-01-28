@@ -1,6 +1,6 @@
 #pragma once
-#include "Constans.h"
-#include "Macros_and_lib.ipp"
+#include "Constants.h"
+#include "MacrosAndLib.ipp"
 #include "Attacks.ipp"
 namespace MoveGeneration {
     void ParseFEN(std::string FEN) {
@@ -106,6 +106,7 @@ namespace MoveGeneration {
 
 
     /*
+    
               binary move bits
 
         0000 0000 0000 0000 0011 1111    source square
@@ -116,6 +117,7 @@ namespace MoveGeneration {
         0010 0000 0000 0000 0000 0000    double push flag
         0100 0000 0000 0000 0000 0000    enpssp flag
         1000 0000 0000 0000 0000 0000    castling flag
+    
     */
 
 

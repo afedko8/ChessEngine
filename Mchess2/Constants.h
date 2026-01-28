@@ -1,5 +1,5 @@
 #pragma once
-#include"Macros_and_lib.ipp"
+#include"MacrosAndLib.ipp"
 
 BRD_U64 P_attacks[2][64];
 

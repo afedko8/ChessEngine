@@ -1,10 +1,10 @@
 #pragma once
 
-#include "Macros_and_lib.ipp"
-#include "Constans.h"
+#include "MacrosAndLib.ipp"
+#include "Constants.h"
 #include "MoveGeneration.ipp"
 #include "Prints.h"
-#include "SearchBeastMove.ipp"
+#include "SearchBestMove.ipp"
 
 #include <cstdio>
 #include <cstring>
@@ -188,6 +188,7 @@ namespace UCI {
                 std::fflush(stdout);
             }
             else if (is_cmd(input, "ucinewgame")) {
+                UCI::ParsePosition("position startpos");
                 // при необходимости — сброс внутреннего состояния на новую партию
                 // например: ClearHash(); ClearHistory(); и т.п.
             }
