@@ -1,6 +1,6 @@
 #pragma once
-#include "Constans.h"
-#include "Macros_and_lib.ipp"
+#include "Constants.h"
+#include "MacrosAndLib.ipp"
 #include "MoveGeneration.ipp"
 namespace PerftDriver {
     static inline BRD_U64 PerftDriver(int depth)
